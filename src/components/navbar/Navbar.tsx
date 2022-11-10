@@ -11,33 +11,48 @@ const Navbar: React.FC = () => {
         <ul>
           <li>
             <a href='#'>about</a>
-            <a href='#' className={styles.projects}>
+          </li>
+          <li className={styles.projects}>
+            <a href='#'>
               projects{' '}
               <AiFillCaretDown
                 style={{
                   fontSize: 12
                 }}
               />
-              <div className={styles.submenu}>
-                <div>
-                  <p>frontend</p>
-                  <ul>
-                    <li>perfect personnel placement</li>
-                    <li>chirper native</li>
-                    <li>w3 bestiary native</li>
-                  </ul>
-                </div>
-                <div>
-                  <p>backend</p>
-                  <ul>
-                    <li>account management system</li>
-                    <li>chirper serverless</li>
-                    <li>w3 bestiary</li>
-                  </ul>
-                </div>
-              </div>
             </a>
-
+            <div className={styles.submenu}>
+              <div>
+                <p>frontend</p>
+                <ul>
+                  <li>
+                    <a href='#'>perfect personnel placement</a>
+                  </li>
+                  <li>
+                    <a href='#'>chirper native</a>
+                  </li>
+                  <li>
+                    <a href='#'>w3 bestiary native</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p>backend</p>
+                <ul>
+                  <li>
+                    <a href='#'>perfect personnel placement</a>
+                  </li>
+                  <li>
+                    <a href='#'>chirper native</a>
+                  </li>
+                  <li>
+                    <a href='#'>w3 bestiary native</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
             <a href='#'>contact</a>
           </li>
         </ul>
