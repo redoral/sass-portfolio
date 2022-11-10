@@ -1,0 +1,33 @@
+@import '../../globals'
+
+.container
+    display: flex
+    flex-direction: column
+    min-height: 75vh
+    min-width: 60vw
+    background-image: url('../../assets/bg.jpg')
+    padding-left: 20vw
+    padding-right: 20vw
+
+.content
+    margin-top: 100px
+
+    h1
+        font-weight: 500
+        line-height: 1.5
+        padding: 20px
+
+.button
+   background: none
+   border: 2px solid $white
+   padding: 10px 20px
+   margin: 20px
+   font-family: $font-stack 
+   border-radius: 5px
+   font-weight: 500
+   cursor: pointer
+
+   &:hover
+    background: $white
+    color: $black
+    transition: 0.5s ease
