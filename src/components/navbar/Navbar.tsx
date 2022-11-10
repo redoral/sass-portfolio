@@ -3,7 +3,7 @@ import { AiFillCaretDown, AiOutlineCoffee } from 'react-icons/ai';
 
 const Navbar: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       <span>
         <AiOutlineCoffee style={{ marginRight: 5 }} /> redoral
       </span>
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

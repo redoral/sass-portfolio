@@ -4,7 +4,7 @@ import { GoChevronDown } from 'react-icons/go';
 
 const Header: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <Navbar />
       <div className={styles.content}>
         <h1>
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
           learn more <GoChevronDown style={{ transform: 'translateY(2px)' }} />
         </button>
       </div>
-    </div>
+    </header>
   );
 };
 

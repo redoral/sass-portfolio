@@ -8,3 +8,32 @@ $tertiary: #D0B8A8
 $accent: #7D6E83
 $white: #FAF9F6
 $black: #313639
+
+.button
+   background: none
+   border: 2px solid $white
+   padding: 10px 20px
+   margin: 20px
+   font-family: $font-stack 
+   border-radius: 5px
+   font-weight: 500
+   cursor: pointer
+   &:hover
+    background: $white
+    color: $black
+    transition: 0.5s ease
+
+.buttonDark
+    background: none
+    border: 2px solid $black
+    color: $black
+    padding: 10px 20px
+    margin: 20px
+    font-family: $font-stack 
+    border-radius: 5px
+    font-weight: 500
+    cursor: pointer
+    &:hover
+        background: $black
+        color: $white
+        transition: 0.5s ease
