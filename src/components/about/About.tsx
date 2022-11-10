@@ -19,7 +19,7 @@ const About: React.FC = () => {
       <h2>about me</h2>
       <p>
         My name's Red. I am a Full Stack Software Engineer. From web and mobile apps to RESTful APIs
-        and serverless backends, I am experienced with a magnitude of development languages, tools,
+        and serverless backends, I am experienced in a magnitude of development languages, tools,
         and processes! And I love what I do. ❤️
       </p>
       <button className={styles.buttonDark}>

@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={styles.container}>
       <span>
-        <AiOutlineCoffee style={{ marginRight: 5 }} /> redoral
+        <AiOutlineCoffee style={{ marginRight: 5, transform: 'translateY(-2px)' }} /> redoral
       </span>
       <div className={styles.items}>
         <ul>
