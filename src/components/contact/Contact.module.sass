@@ -1,0 +1,75 @@
+@import '../../globals'
+    
+.container
+    display: flex
+    background: $tertiary
+
+.map
+    display: flex
+    flex: 2
+    border: 0
+
+.contactInfo
+    margin-top: 5px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    p
+        padding: 0
+        font-weight: 500
+        margin: 0
+        font-size: 14px
+
+.form
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 50px
+    flex: 1
+
+    h2
+        margin: 0
+
+    form
+        display: flex
+        flex-direction: column
+        margin-top: 25px
+        width: 50%
+    
+    label
+        font-weight: 500
+        font-size: 12px
+        padding-left: 15px
+
+    input[type=text], textarea
+        margin: 10px
+        border: 0
+        background: $white
+        color: $black
+        padding: 15px
+        border-radius: 5px
+        font-family: $font-stack
+        font-size: 12px
+        font-weight: 500
+        &:focus
+            outline: none
+            background: $secondary
+            transition: background 0.5s linear
+
+    textarea
+        height: 100px
+        padding: 15px
+        text-align: start
+        resize: none
+    
+    label[for=submit]
+        font-weight: 500
+        font-size: 14px
+        text-align: center
+        padding: 10px 20px
+        align-self: flex-end
+
+
+
+    
