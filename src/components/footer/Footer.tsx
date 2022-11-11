@@ -1,5 +1,11 @@
 import styles from './Footer.module.sass';
-import { AiOutlineCoffee, AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from 'react-icons/ai';
+import {
+  AiOutlineCoffee,
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+  AiOutlineMail,
+  AiOutlinePhone
+} from 'react-icons/ai';
 
 const Footer: React.FC = () => {
   return (
@@ -18,6 +24,7 @@ const Footer: React.FC = () => {
             <AiOutlineGithub className={styles.socials} />
             <AiOutlineLinkedin className={styles.socials} />
             <AiOutlineMail className={styles.socials} />
+            <AiOutlinePhone className={styles.socials} />
           </span>
         </div>
       </div>
