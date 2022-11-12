@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           <span>
             <AiOutlineCoffee style={{ marginRight: 5, transform: 'translateY(-2px)' }} /> redoral
           </span>
-          <p>Reno, NV</p>
+          <p>reno, nv</p>
           <p>redmunozoral@gmail.com</p>
           <p>+1(606)854-3323</p>
         </div>

@@ -48,42 +48,43 @@ const About: React.FC = () => {
         <div>
           <h3>frontend</h3>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SASS</li>
-            <li>Bootstrap</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>React Native</li>
-            <li>Redux</li>
+            <li>html</li>
+            <li>css</li>
+            <li>sass</li>
+            <li>bootstrap</li>
+            <li>javascript</li>
+            <li>typescript</li>
+            <li>react</li>
+            <li>react native</li>
+            <li>redux</li>
           </ul>
         </div>
         <div>
           <h3>backend</h3>
           <ul>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Java</li>
-            <li>Spring Boot</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>NoSQL</li>
-            <li>PostgreSQL</li>
-            <li>AWS Serverless</li>
+            <li>node.js</li>
+            <li>express.js</li>
+            <li>java</li>
+            <li>spring boot</li>
+            <li>php</li>
+            <li>mysql</li>
+            <li>nosql</li>
+            <li>postgresql</li>
+            <li>aws serverless</li>
           </ul>
         </div>
         <div>
           <h3>other</h3>
           <ul>
-            <li>Jest</li>
-            <li>Enzyme</li>
-            <li>JUnit</li>
-            <li>Git</li>
-            <li>Docker</li>
-            <li>VSCode</li>
-            <li>Agile</li>
-            <li>Scrum</li>
+            <li>jest</li>
+            <li>enzyme</li>
+            <li>junit</li>
+            <li>git</li>
+            <li>docker</li>
+            <li>postman</li>
+            <li>vscode</li>
+            <li>agile</li>
+            <li>scrum</li>
           </ul>
         </div>
       </div>

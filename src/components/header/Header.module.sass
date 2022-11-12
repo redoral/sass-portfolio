@@ -3,15 +3,16 @@
 .headerContainer
     display: flex
     flex-direction: column
-    min-height: 75vh
     min-width: 60vw
     background-image: url('../../assets/img/bg.jpg')
-    background-size: cover
+    background-repeat: no-repeat
     padding-left: 20vw
     padding-right: 20vw
     color: $white
 
 .content
+    margin-top: 100px
+    margin-bottom: 200px
     display: flex
     flex: 1
     flex-direction: column
@@ -30,5 +31,6 @@
         
 @media (max-width: 768px)
     .content
+        margin-top: 50px
         h1
             font-size: 24px
