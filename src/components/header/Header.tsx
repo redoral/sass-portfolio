@@ -4,7 +4,7 @@ import { GoChevronDown } from 'react-icons/go';
 
 const Header: React.FC = () => {
   return (
-    <header className={styles.container}>
+    <header className={styles.headerContainer}>
       <Navbar />
       <div className={styles.content}>
         <h1>

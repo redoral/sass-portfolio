@@ -15,7 +15,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.aboutContainer}>
       <h2>about me</h2>
       <p>
         My name's Red. I am a Full Stack Software Engineer. From web and mobile apps to RESTful APIs

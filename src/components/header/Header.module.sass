@@ -1,6 +1,6 @@
 @import '../../globals'
 
-.container
+.headerContainer
     display: flex
     flex-direction: column
     min-height: 75vh
@@ -18,3 +18,12 @@
         line-height: 1.5
         padding: 20px
 
+@media (max-width: 992px)
+    .headerContainer
+        padding-left: 10px
+        padding-right: 10px
+        
+@media (max-width: 768px)
+    .content
+        h1
+            font-size: 24px

@@ -5,8 +5,8 @@ import w3 from '../../assets/projects/w3.jpg';
 
 const Projects: React.FC = () => {
   return (
-    <section className={styles.container}>
-      <h2>some of my work</h2>
+    <section className={styles.projectsContainer}>
+      <h2>projects</h2>
       <p>
         check out more on my{' '}
         <a href='https://github.com/redoral?tab=repositories' target='_blank'>

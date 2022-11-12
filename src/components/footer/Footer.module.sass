@@ -1,13 +1,14 @@
 @import '../../globals'
     
-.container
+.footerContainer
     display: flex
     background: $black
     color: $white
     flex-direction: column
-
 .mainFooter
     display: flex
+    justify-content: space-between
+    align-items: center
     flex-direction: row
     flex: 1
     
@@ -15,8 +16,8 @@
         display: flex
         flex-direction: column
         justify-content: center
-        padding: 2.5% 20%
-        flex: 2
+        padding: 50px 250px
+        flex: 1
         span
             display: flex
             align-items: center
@@ -30,25 +31,61 @@
             font-size: 14px
 
 .socialContainer
-    padding: 0
-    margin: 0
     display: flex
-    align-items: flex-end
-    justify-content: flex-end
+    justify-content: center
+    align-items: center
 
 .socials
     font-size: 24px
-    padding: 0px 0px 0px 15px
+    padding-left: 15px
 
 .bottomFooter
-    display: flex
-    flex: 1
-    padding: 20px 20%
-    justify-content: space-between
-
+    display: flex   
+    padding: 25px 0px
     background: #1f1f1f
 
-    p
-        font-size: 14px
-        padding: 0
-        margin: 0
+    span
+        flex: 1
+        display: flex
+        justify-content: center
+        align-items: center
+
+        p
+            font-size: 14px
+            padding: 0
+            margin: 0
+
+
+@media (max-width: 1200px)
+    .mainFooter
+        div
+            padding: 50px 150px 
+            span
+                font-size: 22px
+            p
+                font-size: 12px
+
+    .bottomFooter
+        padding: 20px 150px
+        span
+            p
+                font-size: 12px
+        
+@media (max-width: 992px)
+    .mainFooter
+        div
+            padding: 50px
+
+    .socials
+        font-size: 20px
+
+@media (max-width: 768px)
+     .mainFooter
+        div
+            padding: 50px
+
+     .bottomFooter
+        padding: 20px 50px
+
+
+

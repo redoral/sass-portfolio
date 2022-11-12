@@ -3,15 +3,19 @@ import { AiFillCaretDown, AiOutlineCoffee } from 'react-icons/ai';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className={styles.container}>
+    <nav className={styles.navbarContainer}>
       <span>
         <AiOutlineCoffee style={{ marginRight: 5, transform: 'translateY(-2px)' }} /> redoral
       </span>
+      <div className={styles.hamburgerNav}>
+        <span>≡</span>
+      </div>
       <div className={styles.items}>
         <ul>
           <li>
             <a href='#'>about</a>
           </li>
+
           <li className={styles.projects}>
             <a href='#'>
               projects{' '}

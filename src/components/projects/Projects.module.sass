@@ -1,12 +1,12 @@
 @import '../../globals'
     
-.container
+.projectsContainer
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
     background: $secondary
-    min-height: 70vh
+    padding: 50px
 
     h2
         margin: 0
@@ -19,15 +19,14 @@
         color: $accent
 
 .projectList
-    display: flex
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 50px
 
 
 .projectCard
-    display: flex
-    flex-direction: column
-    padding: 25px
     img
-        width: 312px
+        width: 256px
 
     h4
         font-weight: 500
@@ -35,3 +34,21 @@
         margin: 0
     a
         font-size: 14px
+
+@media (max-width: 992px)
+    .projectList
+        grid-template-columns: repeat(2, 1fr) 
+        grid-gap: 25px
+
+@media (max-width: 768px)
+    .projectsContainer
+        h2
+            font-size: 22px
+
+        p
+            font-size: 14px
+    .projectCard
+        img
+            width: 200px
+    
+

@@ -9,7 +9,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className={styles.container}>
+    <footer className={styles.footerContainer}>
       <div className={styles.mainFooter}>
         <div>
           <span>
@@ -29,8 +29,12 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className={styles.bottomFooter}>
-        <p>site repo</p>
-        <p>© red oral</p>{' '}
+        <span>
+          <p>site repo</p>
+        </span>
+        <span>
+          <p>© red oral</p>
+        </span>
       </div>
     </footer>
   );

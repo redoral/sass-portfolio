@@ -1,21 +1,19 @@
 @import '../../globals'
     
-.container
+.aboutContainer
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
-    padding-top: 50px
-    padding-bottom: 50px
+    padding: 50px
 
     p
-        width: 500px
+        max-width: 500px
         text-align: center
 
 .skills
     justify-content: center
     align-items: center
-    text-align: center
     margin-top: 25px
     animation: fadeInFromTop 1s ease
 
@@ -28,8 +26,7 @@
         flex-direction: column  
         min-height: 300px
         margin: 20px
-        width: 200px
-
+        max-width: 300px
 
     ul
         list-style-type: none
@@ -38,3 +35,20 @@
 .expandButton
     font-size: 14px
     cursor: pointer
+    
+@media (max-width: 768px)
+    .aboutContainer
+        h2
+            font-size: 22px
+
+        p
+            font-size: 14px
+
+    .skills
+        h3
+            font-size: 18px
+        li
+            font-size: 12px
+
+
+    

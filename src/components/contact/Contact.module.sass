@@ -1,6 +1,6 @@
 @import '../../globals'
     
-.container
+.contactContainer
     display: flex
     background: $tertiary
 
@@ -35,7 +35,7 @@
         display: flex
         flex-direction: column
         margin-top: 25px
-        width: 50%
+        width: 75%
     
     label
         font-weight: 500
@@ -45,7 +45,7 @@
     input[type=text], textarea
         margin: 10px
         border: 0
-        background: $white
+        background: $primary
         color: $black
         padding: 15px
         border-radius: 5px
@@ -54,7 +54,7 @@
         font-weight: 500
         &:focus
             outline: none
-            background: $secondary
+            background: $white
             transition: background 0.5s linear
 
     textarea
@@ -68,7 +68,24 @@
         font-size: 14px
         text-align: center
         padding: 10px 20px
-        align-self: flex-end
+    
+
+@media (max-width: 1200px)
+    .map
+        flex: 1
+
+@media (max-width: 992px)
+    .map
+        display: none
+        
+@media (max-width: 768px)
+    .contactContainer
+        h2
+            font-size: 22px
+        p
+            font-size: 14px
+
+    
 
 
 
