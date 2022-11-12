@@ -30,13 +30,28 @@ const Navbar: React.FC = () => {
                 <p>frontend</p>
                 <ul>
                   <li>
-                    <a href='#'>perfect personnel placement</a>
+                    <a
+                      href='https://github.com/Perfect-Personnel-Placement/frontend'
+                      target='_blank'>
+                      perfect personnel placement
+                    </a>
                   </li>
                   <li>
-                    <a href='#'>chirper native</a>
+                    <a href='https://github.com/redoral/w3-bestiary-native' target='_blank'>
+                      w3 bestiary native
+                    </a>
                   </li>
                   <li>
-                    <a href='#'>w3 bestiary native</a>
+                    <a
+                      href='https://github.com/RevatureRobert/2106Jun07RNCN-2-p2-fe'
+                      target='_blank'>
+                      chirper native
+                    </a>
+                  </li>
+                  <li>
+                    <a href='https://github.com/redoral/sass-portfolio' target='_blank'>
+                      portfolio
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -44,13 +59,26 @@ const Navbar: React.FC = () => {
                 <p>backend</p>
                 <ul>
                   <li>
-                    <a href='#'>perfect personnel placement</a>
+                    <a href='https://github.com/redoral/ams-api' target='_blank'>
+                      ams api
+                    </a>
                   </li>
                   <li>
-                    <a href='#'>chirper native</a>
+                    <a href='https://github.com/redoral/w3-api-springboot' target='_blank'>
+                      w3 api
+                    </a>
                   </li>
                   <li>
-                    <a href='#'>w3 bestiary native</a>
+                    <a
+                      href='https://github.com/RevatureRobert/2106Jun07RNCN-2-p2-be'
+                      target='_blank'>
+                      chirper serverless
+                    </a>
+                  </li>
+                  <li>
+                    <a href='https://github.com/redoral/reddit-market-bot' target='_blank'>
+                      reddit market bot
+                    </a>
                   </li>
                 </ul>
               </div>

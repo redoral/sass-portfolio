@@ -12,8 +12,12 @@ const Contact: React.FC = () => {
       <div className={styles.form}>
         <h2>contact me</h2>
         <span className={styles.contactInfo}>
-          <p>redmunozoral@gmail.com</p>
-          <p>+1(606)854-3323</p>
+          <p>
+            <a href='mailto:redmunozoral@gmail.com'>redmunozoral@gmail.com</a>
+          </p>
+          <p>
+            <a href='tel:6068543323'>+1(606)854-3323</a>
+          </p>
         </span>
         <form>
           <label htmlFor='name'>name</label>

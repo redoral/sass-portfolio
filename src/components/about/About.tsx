@@ -2,6 +2,7 @@ import styles from './About.module.sass';
 import { AiOutlineFilePdf } from 'react-icons/ai';
 import { GoChevronDown, GoChevronUp } from 'react-icons/go';
 import { useState } from 'react';
+import resume from '../../assets/files/resume.pdf';
 
 const About: React.FC = () => {
   const [display, setDisplay] = useState('none');
@@ -22,15 +23,16 @@ const About: React.FC = () => {
         and serverless backends, I am experienced in a magnitude of development languages, tools,
         and processes! And I love what I do. ❤️
       </p>
-      <button className={styles.buttonDark}>
-        download resume{' '}
-        <AiOutlineFilePdf
-          style={{
-            transform: 'translateY(2px)'
-          }}
-        />
-      </button>
-
+      <a href={resume} target='_blank'>
+        <button className={styles.buttonDark}>
+          download resume{' '}
+          <AiOutlineFilePdf
+            style={{
+              transform: 'translateY(2px)'
+            }}
+          />
+        </button>
+      </a>
       <span className={styles.expandButton} onClick={() => toggleCollapse()}>
         {display === 'none' ? (
           <span>

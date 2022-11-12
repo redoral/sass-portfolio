@@ -17,17 +17,23 @@ const Projects: React.FC = () => {
         <div className={styles.projectCard}>
           <img src={chirper} />
           <h4>chirper</h4>
-          <a href='#'>repo</a>
+          <a href='https://github.com/RevatureRobert/2106Jun07RNCN-2-p2-fe' target='_blank'>
+            repo
+          </a>
         </div>
         <div className={styles.projectCard}>
           <img src={p3} />
           <h4>perfect personnel placement</h4>
-          <a href='#'>repo</a>
+          <a href='https://github.com/Perfect-Personnel-Placement/frontend' target='_blank'>
+            repo
+          </a>
         </div>
         <div className={styles.projectCard}>
           <img src={w3} />
           <h4>witcher 3 bestiary</h4>
-          <a href='#'>repo</a>
+          <a href='https://github.com/redoral/reddit-market-bot' target='_blank'>
+            repo
+          </a>
         </div>
       </div>
     </section>

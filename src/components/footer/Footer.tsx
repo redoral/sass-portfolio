@@ -21,16 +21,28 @@ const Footer: React.FC = () => {
         </div>
         <div>
           <span className={styles.socialContainer}>
-            <AiOutlineGithub className={styles.socials} />
-            <AiOutlineLinkedin className={styles.socials} />
-            <AiOutlineMail className={styles.socials} />
-            <AiOutlinePhone className={styles.socials} />
+            <a href='https://github.com/redoral' target='_blank'>
+              <AiOutlineGithub className={styles.socials} />
+            </a>
+            <a href='https://linkedin.com/in/redoral' target='_blank'>
+              <AiOutlineLinkedin className={styles.socials} />
+            </a>
+            <a href='mailto:redmunozoral@gmail.com'>
+              <AiOutlineMail className={styles.socials} />
+            </a>
+            <a href='tel:6068543323'>
+              <AiOutlinePhone className={styles.socials} />
+            </a>
           </span>
         </div>
       </div>
       <div className={styles.bottomFooter}>
         <span>
-          <p>site repo</p>
+          <p>
+            <a href='https://github.com/redoral/sass-portfolio' target='_blank'>
+              site repo
+            </a>
+          </p>
         </span>
         <span>
           <p>© red oral</p>
