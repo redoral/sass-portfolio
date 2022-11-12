@@ -20,8 +20,8 @@ const Contact: React.FC = () => {
           </p>
         </span>
         <form>
-          <label htmlFor='name'>name</label>
-          <input type='text' id='name' />
+          <label htmlFor='email'>email</label>
+          <input type='text' id='email' />
           <label htmlFor='subject'>subject</label>
           <input type='text' id='subject' />
           <label htmlFor='name'>message</label>
