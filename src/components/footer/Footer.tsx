@@ -1,11 +1,6 @@
 import styles from './Footer.module.sass';
-import {
-  AiOutlineCoffee,
-  AiOutlineGithub,
-  AiOutlineLinkedin,
-  AiOutlineMail,
-  AiOutlinePhone
-} from 'react-icons/ai';
+import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
+import { BiCoffee } from 'react-icons/bi';
 
 const Footer: React.FC = () => {
   return (
@@ -13,7 +8,7 @@ const Footer: React.FC = () => {
       <div className={styles.mainFooter}>
         <div>
           <span>
-            <AiOutlineCoffee style={{ marginRight: 5, transform: 'translateY(-2px)' }} /> redoral
+            <BiCoffee style={{ marginRight: 5 }} /> redoral
           </span>
           <ul>
             <li>reno, nv</li>

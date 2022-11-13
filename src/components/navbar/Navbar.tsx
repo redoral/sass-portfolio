@@ -1,5 +1,6 @@
 import styles from './Navbar.module.sass';
-import { AiFillCaretDown, AiOutlineCoffee } from 'react-icons/ai';
+import { AiFillCaretDown } from 'react-icons/ai';
+import { BiCoffee } from 'react-icons/bi';
 
 interface PropsI {
   isOpen: boolean;
@@ -10,7 +11,7 @@ const Navbar: React.FC<PropsI> = (props: PropsI) => {
   return (
     <nav className={styles.navbarContainer}>
       <span>
-        <AiOutlineCoffee style={{ marginRight: 5, transform: 'translateY(-2px)' }} /> redoral
+        <BiCoffee style={{ marginRight: 5 }} /> redoral
       </span>
       <div className={styles.hamburgerNav}>
         <span
