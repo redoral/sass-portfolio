@@ -19,10 +19,10 @@ const Header: React.FC = () => {
           software engineer
         </h1>
         <span>
-          <a href='https://www.github.com/redoral'>
+          <a href='https://www.github.com/redoral' target='_blank'>
             <AiOutlineGithub />
           </a>{' '}
-          <a href='https://www.linkedin.com/in/redoral'>
+          <a href='https://www.linkedin.com/in/redoral' target='_blank'>
             <AiOutlineLinkedin />
           </a>
         </span>
