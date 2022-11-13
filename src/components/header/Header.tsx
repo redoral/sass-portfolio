@@ -1,12 +1,26 @@
 import { GoChevronDown } from 'react-icons/go';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
+import TextTransition, { presets } from 'react-text-transition';
 import Navbar from '../navbar/Navbar';
 import Hamburger from '../hamburger/Hamburger';
 import styles from './Header.module.sass';
-import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+  const title: string[] = ['frontend', 'backend', 'full stack'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (index < 2) {
+        setIndex(index + 1);
+      } else {
+        setIndex(0);
+      }
+    }, 1500);
+    return () => clearInterval(interval);
+  });
 
   return (
     <header className={styles.headerContainer} onClick={() => (isOpen ? setIsOpen(false) : null)}>
@@ -14,8 +28,9 @@ const Header: React.FC = () => {
       <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className={styles.content}>
         <h1>
-          full stack
-          <br />
+          <TextTransition springConfig={presets.wobbly} className={styles.dynamicTitle}>
+            {title[index]}
+          </TextTransition>
           software engineer
         </h1>
         <span>
