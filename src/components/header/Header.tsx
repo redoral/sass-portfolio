@@ -28,9 +28,7 @@ const Header: React.FC = () => {
       <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className={styles.content}>
         <h1>
-          <TextTransition springConfig={presets.wobbly} className={styles.dynamicTitle}>
-            {title[index]}
-          </TextTransition>
+          <TextTransition springConfig={presets.wobbly}>{title[index]}</TextTransition>
           software engineer
         </h1>
         <span>
