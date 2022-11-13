@@ -15,9 +15,11 @@ const Footer: React.FC = () => {
           <span>
             <AiOutlineCoffee style={{ marginRight: 5, transform: 'translateY(-2px)' }} /> redoral
           </span>
-          <p>reno, nv</p>
-          <p>redmunozoral@gmail.com</p>
-          <p>+1(606)854-3323</p>
+          <ul>
+            <li>reno, nv</li>
+            <li>redmunozoral@gmail.com</li>
+            <li>+1(606)854-3323</li>
+          </ul>
         </div>
         <div>
           <span className={styles.socialContainer}>
