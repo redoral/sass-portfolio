@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
           <input type='text' id='subject' />
           <label htmlFor='name'>message</label>
           <textarea id='message' />
-          <label htmlFor='submit' className={styles.buttonDark}>
+          <label htmlFor='submit' className={`${styles.button} ${styles.buttonDark}`}>
             send{' '}
             <AiOutlineSend
               style={{

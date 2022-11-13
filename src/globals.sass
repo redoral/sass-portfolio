@@ -4,7 +4,6 @@
  * Variables
  */
 $font-stack: 'Poppins', sans-serif
-
 $primary: #F8EDE3
 $secondary: #DFD3C3
 $tertiary: #D0B8A8
@@ -13,37 +12,22 @@ $white: #FAF9F6
 $black: #313639
 
 /*
- * Classes
+ * Mixins
  */
-.button
+@mixin button($color, $hoverColor)
    background: none
-   border: 2px solid $white
+   color: $color
+   border: 2px solid $color
    padding: 10px 20px
    margin: 20px
    font-family: $font-stack 
    border-radius: 5px
    font-weight: 500
    cursor: pointer
-   width: 150px
    &:hover
-    background: $white
-    color: $black
+    background: $color
+    color: $hoverColor
     transition: 0.5s ease
-
-.buttonDark
-    background: none
-    border: 2px solid $black
-    color: $black
-    padding: 10px 20px
-    margin: 20px
-    font-family: $font-stack 
-    border-radius: 5px
-    font-weight: 500
-    cursor: pointer
-    &:hover
-        background: $black
-        color: $white
-        transition: 0.5s ease
 
 /*
  * Animations

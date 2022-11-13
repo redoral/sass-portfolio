@@ -6,49 +6,44 @@
     align-items: center
     justify-content: center
     padding: 50px
-
     p
         max-width: 500px
         text-align: center
-
-.skills
-    justify-content: center
-    align-items: center
-    margin-top: 25px
-    animation: fadeInFromTop 1s ease
-
-    h3 
-        padding: 0
-        margin: 0
-
-    div
-        display: flex
-        flex-direction: column  
-        min-height: 300px
-        margin: 20px
-        max-width: 300px
-
-    ul
-        list-style-type: none
-        padding: 0
-
-.expandButton
-    font-size: 14px
-    cursor: pointer
+    a
+        button
+            @include button($black, $white)
+    .skills
+        justify-content: center
+        align-items: center
+        margin-top: 25px
+        animation: fadeInFromTop 1s ease
+        h3 
+            padding: 0
+            margin: 0
+        div
+            display: flex
+            flex-direction: column  
+            min-height: 300px
+            margin: 20px
+            max-width: 300px
+            ul
+                list-style-type: none
+                padding: 0
+    .expandButton
+        font-size: 14px
+        cursor: pointer
     
 @media (max-width: 768px)
     .aboutContainer
         h2
             font-size: 22px
-
         p
             font-size: 14px
-
-    .skills
-        h3
-            font-size: 18px
-        li
-            font-size: 12px
+        .skills
+            h3
+                font-size: 18px
+            li
+                font-size: 12px
 
 
     

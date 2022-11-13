@@ -2,101 +2,88 @@
 
 .navbarContainer 
     display: flex
-    min-height: 150px
-
+    min-height: 150px 
+    width: 1000px
     span
         display: flex
         align-items: center
         padding: 20px
-        font-weight: 500
         font-size: 28px
-
-.items
-    display: flex
-    align-items: center
-
-    ul
-        list-style-type: none
-        font-weight: 400
-        padding: 20px
-
-    li
-        float: left
-    
-    a
-        text-decoration: none
-        color: $white
-        padding-left: 25px
-        padding-right: 25px
-        &:hover 
-            color: $secondary
-
-.projects
-    &:hover .submenu
+        font-weight: 500
+    .items
         display: flex
-
-.submenu
-    display: none
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    min-width: 300px
-    position: absolute
-    background-color: $white
-    color: $black
-    border-top: 5px solid $secondary
-    animation: fadeInFromTop 1s
-    
-    div
-        margin: 50px 50px
-
-        p
-            font-weight: 700
-
-    ul
-        margin: 0
-        padding: 0
-
-    li
-        padding-bottom: 5px
-        float: none
-    a
-        font-weight: 400
-        font-size: 14px
-        color: $black
-        padding: 0
-        &:hover
-            color: $accent
-
-.hamburgerNav
-    display: none
+        align-items: center
+        ul
+            padding: 20px
+            list-style-type: none
+            font-weight: 400
+            li
+                float: left
+                a
+                    padding-left: 25px
+                    padding-right: 25px
+                    color: $white
+                    text-decoration: none
+                    &:hover 
+                        color: $secondary
+            .projects
+                &:hover .submenu
+                    display: flex
+                .submenu
+                    display: none
+                    flex-direction: row
+                    justify-content: center
+                    align-items: center
+                    min-width: 300px
+                    position: absolute
+                    background-color: $white
+                    color: $black
+                    border-top: 5px solid $secondary
+                    animation: fadeInFromTop 1s   
+                    div
+                        margin: 50px 50px
+                        p
+                            font-weight: 700
+                    ul
+                        margin: 0
+                        padding: 0
+                    li
+                        padding-bottom: 5px
+                        float: none
+                    a
+                        padding: 0
+                        font-weight: 400
+                        font-size: 14px
+                        color: $black
+                        &:hover
+                            color: $accent
+    .hamburgerNav
+        display: none
         
+@media (max-width: 1000px)
+    .navbarContainer
+        width: 100%
 
 @media (max-width: 992px)
-    .items
-        font-size: 14px
+    .navbarContainer
+        .items
+            font-size: 14px
 
-
-/* Medium devices */
 @media (max-width: 768px) 
     .navbarContainer
         justify-content: space-between
         span
             font-size: 24px
-    
-    .items
-       display: none
-    
-    .hamburgerNav
-        display: flex
-    
-    .submenu
+        .items
+            display: none
+        .submenu
             font-size: 14px
             div
                 margin: 25px
             a
                 font-size: 12px
-
+        .hamburgerNav
+            display: flex
 
 
     

@@ -24,7 +24,7 @@ const About: React.FC = () => {
         and processes! And I love what I do. ❤️
       </p>
       <a href={resume} target='_blank'>
-        <button className={styles.buttonDark}>
+        <button className={`${styles.button} ${styles.buttonDark}`}>
           download resume{' '}
           <AiOutlineFilePdf
             style={{

@@ -3,86 +3,79 @@
 .contactContainer
     display: flex
     background: $tertiary
-
-.map
-    display: flex
-    flex: 2
-    border: 0
-
-.contactInfo
-    margin-top: 5px
-    display: flex
-    flex-direction: column
-    align-items: center
-
-    p
-        padding: 0
-        font-weight: 500
-        margin: 0
-        font-size: 14px
-
-    a
-        color: $black
-        text-decoration: none
-        &:hover
-            color: $accent
-.form
-    display: flex
-    flex-direction: column
-    align-items: center
-    margin-top: 50px
-    flex: 1
-
-    h2
-        margin: 0
-
-    form
+    .map
+        display: flex
+        flex: 2
+        border: 0
+    .contactInfo
         display: flex
         flex-direction: column
-        margin-top: 25px
-        width: 75%
-    
-    label
-        font-weight: 500
-        font-size: 12px
-        padding-left: 15px
-
-    input[type=text], textarea
-        margin: 10px
-        border: 0
-        background: $primary
-        color: $black
-        padding: 15px
-        border-radius: 5px
-        font-family: $font-stack
-        font-size: 12px
-        font-weight: 500
-        &:focus
-            outline: none
-            background: $white
-            transition: background 0.5s linear
-
-    textarea
-        height: 100px
-        padding: 15px
-        text-align: start
-        resize: none
-    
-    label[for=submit]
-        font-weight: 500
-        font-size: 14px
-        text-align: center
-        padding: 10px 20px
-    
-
-@media (max-width: 1200px)
-    .map
+        align-items: center
+        margin-top: 5px
+        p
+            padding: 0
+            margin: 0
+            font-weight: 500
+            font-size: 14px
+        a
+            color: $black
+            text-decoration: none
+            &:hover
+                color: $accent
+    .form
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 50px
         flex: 1
+        h2
+            margin: 0
+        form
+            display: flex
+            flex-direction: column
+            margin-top: 25px
+            width: 75%
+            label
+                font-weight: 500
+                font-size: 12px
+                padding-left: 15px
+            input[type=text], textarea
+                margin: 10px
+                padding: 15px
+                border: 0
+                background: $primary
+                color: $black
+                border-radius: 5px
+                font-family: $font-stack
+                font-size: 12px
+                font-weight: 500
+                &:focus
+                    outline: none
+                    background: $white
+                    transition: background 0.5s linear
+            textarea
+                height: 100px
+                padding: 15px
+                text-align: start
+                resize: none
+        
+            label[for=submit]
+                @include button($black, $white)
+                padding: 10px 20px
+                font-weight: 500
+                font-size: 14px
+                text-align: center
+        
+@media (max-width: 1200px)
+    .contactContainer
+        .map
+            flex: 1
 
 @media (max-width: 992px)
-    .map
-        display: none
-        
+    .contactContainer
+        .map
+            display: none
+            
 @media (max-width: 768px)
     .contactContainer
         h2
