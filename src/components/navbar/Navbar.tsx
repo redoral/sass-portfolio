@@ -1,14 +1,29 @@
 import styles from './Navbar.module.sass';
 import { AiFillCaretDown, AiOutlineCoffee } from 'react-icons/ai';
 
-const Navbar: React.FC = () => {
+interface PropsI {
+  isOpen: boolean;
+  setIsOpen: any;
+}
+
+const Navbar: React.FC<PropsI> = (props: PropsI) => {
   return (
     <nav className={styles.navbarContainer}>
       <span>
         <AiOutlineCoffee style={{ marginRight: 5, transform: 'translateY(-2px)' }} /> redoral
       </span>
       <div className={styles.hamburgerNav}>
-        <span>≡</span>
+        <span
+          onClick={(e) => {
+            if (props.isOpen) {
+              props.setIsOpen(false);
+            } else {
+              props.setIsOpen(true);
+            }
+            e.stopPropagation();
+          }}>
+          ≡
+        </span>
       </div>
       <div className={styles.items}>
         <ul>

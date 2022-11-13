@@ -59,7 +59,16 @@
                             color: $accent
     .hamburgerNav
         display: none
-        
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        &:hover
+            color: $accent
+            transition: color 0.5s ease
+
 @media (max-width: 1000px)
     .navbarContainer
         width: 100%
@@ -84,6 +93,7 @@
                 font-size: 12px
         .hamburgerNav
             display: flex
+            cursor: pointer
 
 
     
