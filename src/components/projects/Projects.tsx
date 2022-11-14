@@ -1,7 +1,7 @@
 import styles from './Projects.module.sass';
 import chirper from '../../assets/projects/chirper.jpg';
 import p3 from '../../assets/projects/p3.jpg';
-import w3 from '../../assets/projects/w3.jpg';
+import aws from '../../assets/projects/aws.jpg';
 import { RefsI } from '../../App';
 
 const Projects: React.FC<RefsI> = (props: RefsI) => {
@@ -30,9 +30,9 @@ const Projects: React.FC<RefsI> = (props: RefsI) => {
           </a>
         </div>
         <div className={styles.projectCard}>
-          <img src={w3} />
-          <h4>witcher 3 bestiary</h4>
-          <a href='https://github.com/redoral/reddit-market-bot' target='_blank'>
+          <img src={aws} />
+          <h4>chirper serverless</h4>
+          <a href='https://github.com/RevatureRobert/2106Jun07RNCN-2-p2-be' target='_blank'>
             repo
           </a>
         </div>
