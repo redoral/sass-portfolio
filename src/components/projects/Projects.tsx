@@ -16,24 +16,24 @@ const Projects: React.FC<RefsI> = (props: RefsI) => {
       </p>
       <div className={styles.projectList}>
         <div className={styles.projectCard}>
-          <img src={chirper} />
-          <h4>chirper</h4>
           <a href='https://github.com/RevatureRobert/2106Jun07RNCN-2-p2-fe' target='_blank'>
-            repo
+            <img src={chirper} />
+            <h4>chirper</h4>
+            <p>react native</p>
           </a>
         </div>
         <div className={styles.projectCard}>
-          <img src={p3} />
-          <h4>perfect personnel placement</h4>
           <a href='https://github.com/Perfect-Personnel-Placement/frontend' target='_blank'>
-            repo
+            <img src={p3} />
+            <h4>p3</h4>
+            <p>react native</p>
           </a>
         </div>
         <div className={styles.projectCard}>
-          <img src={aws} />
-          <h4>chirper serverless</h4>
           <a href='https://github.com/RevatureRobert/2106Jun07RNCN-2-p2-be' target='_blank'>
-            repo
+            <img src={aws} />
+            <h4>chirper serverless</h4>
+            <p>aws sam</p>
           </a>
         </div>
       </div>

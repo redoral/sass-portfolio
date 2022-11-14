@@ -20,6 +20,7 @@
         grid-gap: 50px
         .projectCard
             img
+                @include noSelectDrag()
                 width: 256px
             h4
                 font-weight: 500
@@ -27,6 +28,21 @@
                 margin: 0
             a
                 font-size: 14px
+                text-decoration: none
+                color: $black
+                &:hover
+                    color: $accent
+                    transition: color 0.5s ease
+
+            p
+                font-size: 12px
+                padding: 0
+                margin: 0
+                max-width: 250px
+                line-height: 1
+            &:hover
+                animation: slideToTop 0.5s ease
+                transform: translateY(-10px)
 
 @media (max-width: 992px)
     .projectsContainer

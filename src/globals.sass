@@ -15,6 +15,7 @@ $black: #313639
  * Mixins
  */
 @mixin button($color, $hoverColor)
+   @include noSelectDrag()
    background: none
    color: $color
    border: 2px solid $color
@@ -28,6 +29,16 @@ $black: #313639
     background: $color
     color: $hoverColor
     transition: 0.5s ease
+
+@mixin noSelectDrag()
+  -webkit-user-select: none
+  -ms-user-select: none
+  -webkit-user-drag: none
+  -khtml-user-drag: none
+  -moz-user-drag: none
+  -o-user-drag: none
+  user-drag: none
+  user-select: none
 
 /*
  * Animations
@@ -45,6 +56,13 @@ $black: #313639
     opacity: 0
   100% 
     opacity: 1
+
+  
+@keyframes slideToTop
+  0%
+    transform: translateY(0)
+  100% 
+    transform: translateY(-10px)
 
 @keyframes hamburger
   0%
