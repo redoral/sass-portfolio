@@ -5,8 +5,9 @@ import TextTransition, { presets } from 'react-text-transition';
 import Navbar from '../navbar/Navbar';
 import Hamburger from '../hamburger/Hamburger';
 import styles from './Header.module.sass';
+import { RefsI } from '../../App';
 
-const Header: React.FC = () => {
+const Header: React.FC<RefsI> = (props: RefsI) => {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const title: string[] = ['frontend', 'backend', 'full stack'];
@@ -23,9 +24,12 @@ const Header: React.FC = () => {
   });
 
   return (
-    <header className={styles.headerContainer} onClick={() => (isOpen ? setIsOpen(false) : null)}>
-      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
-      <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+    <header
+      className={styles.headerContainer}
+      onClick={() => (isOpen ? setIsOpen(false) : null)}
+      ref={props.refs.headerRef}>
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} refs={{ refs: props.refs }} />
+      <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} refs={{ refs: props.refs }} />
       <div className={styles.content}>
         <h1>
           <TextTransition springConfig={presets.wobbly} className={styles.dynamicText}>
@@ -41,7 +45,9 @@ const Header: React.FC = () => {
             <AiOutlineLinkedin />
           </a>
         </span>
-        <button className={styles.button}>
+        <button
+          className={styles.button}
+          onClick={() => props.refs.aboutRef.current.scrollIntoView()}>
           learn more <GoChevronDown style={{ transform: 'translateY(2px)' }} />
         </button>
       </div>

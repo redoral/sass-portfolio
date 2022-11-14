@@ -2,10 +2,11 @@ import styles from './Projects.module.sass';
 import chirper from '../../assets/projects/chirper.jpg';
 import p3 from '../../assets/projects/p3.jpg';
 import w3 from '../../assets/projects/w3.jpg';
+import { RefsI } from '../../App';
 
-const Projects: React.FC = () => {
+const Projects: React.FC<RefsI> = (props: RefsI) => {
   return (
-    <section className={styles.projectsContainer}>
+    <section className={styles.projectsContainer} ref={props.refs.projectsRef}>
       <h2>projects</h2>
       <p>
         check out more on my{' '}

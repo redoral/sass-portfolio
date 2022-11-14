@@ -3,8 +3,9 @@ import { AiOutlineFilePdf } from 'react-icons/ai';
 import { GoChevronDown, GoChevronUp } from 'react-icons/go';
 import { useState } from 'react';
 import resume from '../../assets/files/resume.pdf';
+import { RefsI } from '../../App';
 
-const About: React.FC = () => {
+const About: React.FC<RefsI> = (props: RefsI) => {
   const [display, setDisplay] = useState('none');
 
   const toggleCollapse = () => {
@@ -16,7 +17,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <section className={styles.aboutContainer}>
+    <section className={styles.aboutContainer} ref={props.refs.aboutRef}>
       <h2>about me</h2>
       <p>
         My name's Red. I am a Full Stack Software Engineer. From web and mobile apps to RESTful APIs

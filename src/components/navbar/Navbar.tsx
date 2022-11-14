@@ -1,10 +1,12 @@
 import styles from './Navbar.module.sass';
 import { AiFillCaretDown } from 'react-icons/ai';
 import { BiCoffee } from 'react-icons/bi';
+import { RefsI } from '../../App';
 
 interface PropsI {
   isOpen: boolean;
   setIsOpen: any;
+  refs: RefsI;
 }
 
 const Navbar: React.FC<PropsI> = (props: PropsI) => {
@@ -29,11 +31,11 @@ const Navbar: React.FC<PropsI> = (props: PropsI) => {
       <div className={styles.items}>
         <ul>
           <li>
-            <a href='#'>about</a>
+            <a onClick={() => props.refs.refs.aboutRef.current.scrollIntoView()}>about</a>
           </li>
 
           <li className={styles.projects}>
-            <a href='#'>
+            <a onClick={() => props.refs.refs.projectsRef.current.scrollIntoView()}>
               projects{' '}
               <AiFillCaretDown
                 style={{
@@ -101,7 +103,7 @@ const Navbar: React.FC<PropsI> = (props: PropsI) => {
             </div>
           </li>
           <li>
-            <a href='#'>contact</a>
+            <a onClick={() => props.refs.refs.contactRef.current.scrollIntoView()}>contact</a>
           </li>
         </ul>
       </div>
