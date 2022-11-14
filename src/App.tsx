@@ -23,7 +23,7 @@ const App: React.FC = () => {
       <About refs={refs} />
       <Projects refs={refs} />
       <Contact refs={refs} />
-      <Footer />
+      <Footer refs={refs} />
     </>
   );
 };
