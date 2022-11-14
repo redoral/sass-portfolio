@@ -61,16 +61,12 @@
                         &:hover
                             color: $accent
     .hamburgerNav
+        @include noSelectDrag()
         display: none
-        -webkit-touch-callout: none
-        -webkit-user-select: none
-        -khtml-user-select: none
-        -moz-user-select: none
-        -ms-user-select: none
-        user-select: none
         &:hover
             color: $secondary
             transition: color 0.5s ease
+            
 
 @media (max-width: 1000px)
     .navbarContainer

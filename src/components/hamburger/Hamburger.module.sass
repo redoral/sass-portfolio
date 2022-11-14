@@ -17,8 +17,10 @@
             font-size: 14px 
             font-weight: 500
             a
+                @include noSelectDrag()
                 color: $black
                 text-decoration: none
                 cursor: pointer
                 &:hover
+                    transition: color 0.5 ease
                     color: $accent
