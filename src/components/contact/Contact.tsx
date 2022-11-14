@@ -45,7 +45,7 @@ const Contact: React.FC<RefsI> = (props: RefsI) => {
 
   const dynamicButton = () => {
     if (response === 'loading') {
-      return <img src={spinner} width='32px' />;
+      return <img src={spinner} width='50px' />;
     } else if (response === 'OK') {
       return <FcCheckmark className={styles.buttonIcon} size={32} />;
     } else if (response.startsWith('error')) {
