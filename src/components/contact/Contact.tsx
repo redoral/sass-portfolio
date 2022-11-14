@@ -1,7 +1,11 @@
 import styles from './Contact.module.sass';
 import { AiOutlineSend } from 'react-icons/ai';
+import { useRef, MutableRefObject } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
+  const formRef = useRef() as MutableRefObject<HTMLFormElement>;
+
   return (
     <section className={styles.contactContainer}>
       <iframe
@@ -19,7 +23,7 @@ const Contact: React.FC = () => {
             <a href='tel:6068543323'>+1(606)854-3323</a>
           </p>
         </span>
-        <form>
+        <form ref={formRef}>
           <label htmlFor='email'>email</label>
           <input type='text' id='email' />
           <label htmlFor='subject'>subject</label>
