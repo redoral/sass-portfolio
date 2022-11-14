@@ -1,10 +1,45 @@
 import styles from './Contact.module.sass';
-import { AiOutlineSend } from 'react-icons/ai';
-import { useRef, MutableRefObject } from 'react';
+import {
+  AiOutlineSend,
+  AiOutlineCheckCircle,
+  AiOutlineExclamationCircle,
+  AiOutlineMail,
+  AiOutlineUser,
+  AiOutlineMessage
+} from 'react-icons/ai';
+import { useRef, MutableRefObject, FormEvent, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
   const formRef = useRef() as MutableRefObject<HTMLFormElement>;
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+  const [response, setResponse] = useState('');
+
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+
+    if (email.includes('@') && name.length > 2 && message) {
+      setResponse('loading');
+
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.VITE_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            setResponse(result.text);
+          },
+          (error) => {
+            setResponse(error.text);
+          }
+        );
+    }
+  };
 
   return (
     <section className={styles.contactContainer}>
@@ -23,13 +58,66 @@ const Contact: React.FC = () => {
             <a href='tel:6068543323'>+1(606)854-3323</a>
           </p>
         </span>
-        <form ref={formRef}>
+        <form ref={formRef} onSubmit={sendEmail}>
           <label htmlFor='email'>email</label>
-          <input type='text' id='email' />
-          <label htmlFor='subject'>subject</label>
-          <input type='text' id='subject' />
+          <span>
+            <AiOutlineMail className={styles.formIcon} />
+            <input
+              type='email'
+              id='email'
+              name='user_email'
+              required
+              autoComplete='off'
+              onChange={(e: any) => setEmail(e.target.value)}
+            />
+            {email.includes('@') ? (
+              <AiOutlineCheckCircle className={styles.formIcon} style={{ color: '#77CC77' }} />
+            ) : (
+              <AiOutlineExclamationCircle
+                className={styles.formIcon}
+                style={{ color: '#FF6961' }}
+              />
+            )}
+          </span>
+          <label htmlFor='name'>name</label>
+          <span>
+            <AiOutlineUser className={styles.formIcon} />
+            <input
+              type='text'
+              id='name'
+              name='user_name'
+              autoComplete='off'
+              minLength={2}
+              required
+              onChange={(e: any) => setName(e.target.value)}
+            />
+            {name.length > 1 ? (
+              <AiOutlineCheckCircle className={styles.formIcon} style={{ color: '#77CC77' }} />
+            ) : (
+              <AiOutlineExclamationCircle
+                className={styles.formIcon}
+                style={{ color: '#FF6961' }}
+              />
+            )}
+          </span>
           <label htmlFor='name'>message</label>
-          <textarea id='message' />
+          <span>
+            <AiOutlineMessage className={styles.formIcon} />
+            <textarea
+              id='message'
+              name='message'
+              required
+              onChange={(e: any) => setMessage(e.target.value)}
+            />
+            {message ? (
+              <AiOutlineCheckCircle className={styles.formIcon} style={{ color: '#77CC77' }} />
+            ) : (
+              <AiOutlineExclamationCircle
+                className={styles.formIcon}
+                style={{ color: '#FF6961' }}
+              />
+            )}
+          </span>
           <label htmlFor='submit' className={`${styles.button} ${styles.buttonDark}`}>
             send{' '}
             <AiOutlineSend

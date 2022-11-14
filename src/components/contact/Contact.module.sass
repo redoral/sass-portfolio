@@ -39,25 +39,33 @@
                 font-weight: 500
                 font-size: 12px
                 padding-left: 15px
-            input[type=text], textarea
+            span
+                display: flex
                 margin: 10px
                 padding: 15px
                 border: 0
                 background: $primary
-                color: $black
                 border-radius: 5px
-                font-family: $font-stack
                 font-size: 12px
-                font-weight: 500
-                &:focus
-                    outline: none
-                    background: $white
-                    transition: background 0.5s linear
+                .formIcon
+                    font-size: 16px
+                    margin-top: 2px
+                    margin-right: 10px
+            textarea, input
+                    flex: 1
+                    background: none
+                    font-family: $font-stack
+                    border: 0
+                    color: $black
+                    font-weight: 500
+                    &:focus
+                        outline: none
+                        transition: background 0.5s linear
             textarea
                 height: 100px
-                padding: 15px
                 text-align: start
                 resize: none
+                border: 0
         
             label[for=submit]
                 @include button($black, $white)
@@ -65,6 +73,11 @@
                 font-weight: 500
                 font-size: 14px
                 text-align: center
+                margin-bottom: 0
+        
+        .error
+            font-weight: 500
+            margin-block: 25px
         
 @media (max-width: 1200px)
     .contactContainer
