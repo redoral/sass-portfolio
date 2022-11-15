@@ -3,6 +3,7 @@ import {
   AiOutlineSend,
   AiOutlineCheckCircle,
   AiOutlineExclamationCircle,
+  AiOutlinePhone,
   AiOutlineMail,
   AiOutlineUser,
   AiOutlineMessage
@@ -73,12 +74,14 @@ const Contact: React.FC<RefsI> = (props: RefsI) => {
     <section className={styles.contactContainer} ref={props.refs.contactRef}>
       <div className={styles.personalImg}></div>
       <div className={styles.form}>
-        <h2>contact me</h2>
+        <h2>let's chat!</h2>
         <span className={styles.contactInfo}>
           <p>
+            <AiOutlineMail className={styles.contactIcon} />{' '}
             <a href='mailto:redmunozoral@gmail.com'>redmunozoral@gmail.com</a>
           </p>
           <p>
+            <AiOutlinePhone className={styles.contactIcon} />{' '}
             <a href='tel:6068543323'>+1(606)854-3323</a>
           </p>
         </span>
