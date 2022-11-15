@@ -3,14 +3,17 @@
 .contactContainer
     display: flex
     background: $tertiary
-    .map
+    .personalImg
         display: flex
-        flex: 3
+        flex: 1
         border: 0
+        background: url('https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+        background-size: cover
+     
     .contactInfo
         display: flex
         flex-direction: column
-        align-items: center
+        align-items: flex-start
         margin-top: 5px
         p
             padding: 0
@@ -35,7 +38,7 @@
             display: flex
             flex-direction: column
             margin-top: 25px
-            width: 90%
+            width: 400px
             min-height: 500px
             label
                 font-weight: 500
@@ -91,15 +94,10 @@
         .error
             font-weight: 500
             margin-block: 25px
-        
-@media (max-width: 1200px)
-    .contactContainer
-        .map
-            flex: 1
 
 @media (max-width: 992px)
     .contactContainer
-        .map
+        .personalImg
             display: none
             
 @media (max-width: 768px)
