@@ -52,8 +52,6 @@ const Footer: React.FC<RefsI> = (props: RefsI) => {
               site repo
             </a>
           </p>
-        </span>
-        <span>
           <p>© red oral</p>
         </span>
       </div>

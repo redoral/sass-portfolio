@@ -3,6 +3,7 @@
 .footerContainer
     display: flex
     flex-direction: column
+    align-items: center
     background: $black
     color: $white 
     a
@@ -10,75 +11,67 @@
     .mainFooter
         display: flex
         justify-content: space-between
-        align-items: center
-        flex-direction: row
         align-items: flex-start
-        min-height: 250px
-        flex: 1 
+        min-width: 1000px 
         div
             display: flex
-            flex-direction: column
-            align-items: center
-            padding-block: 50px
             flex: 1
+            flex-direction: column
+            padding-block: 50px 25px
             span
                 @include noSelectDrag()
                 display: flex
-                font-weight: 400
                 font-size: 24px  
-                margin-bottom: 15px 
+                margin-bottom: 5px 
             ul
                 list-style-type: none
-                margin-right: 30px
                 padding: 0
                 li
                     @include noSelectDrag()
-                    padding-block: 10px
+                    padding-top: 20px
                     font-size: 14px 
                     cursor: pointer
                     &:hover
                         color: $accent
                         transition: color 0.5s ease
         .rightContainer
-            min-height: 250px
+            min-height: 220px
             justify-content: space-between
+            align-items: flex-end
             .socialContainer
                 display: flex
-                justify-content: center
-                align-items: center
                 .socials
                     @include noSelectDrag()
                     font-size: 24px
-                    padding-right: 15px
+                    padding-left: 15px
             .techLogoContainer
                 .techLogo
                     @include noSelectDrag()
                     height: 20px
-                    padding-right: 15px
-         
+                    padding-left: 15px
+                    filter: brightness(75%)
     .bottomFooter
-        display: flex   
+        display: flex 
+        justify-content: center
+        align-items: center  
+        min-width: 100vw
         background: #1f1f1f
-        padding-block: 20px
         span
-            flex: 1
             display: flex
-            justify-content: center
+            justify-content: space-between
             align-items: center
+            padding-block: 20px
+            min-width: 1000px  
             p
                 font-size: 14px
                 padding: 0
                 margin: 0
 
-@media (max-width: 1200px)
+@media (max-width: 1000px)
     .footerContainer
+        align-items: flex-start
         .mainFooter
-            div
-                padding: 50px 150px 
-        
-@media (max-width: 992px)
-    .footerContainer
-        .mainFooter
+            min-width: 0
             flex-direction: column
             div
                 padding-inline: 25px
@@ -92,8 +85,18 @@
                 align-items: flex-start
                 .socialContainer
                     margin-top: 15px
+                    .socials
+                        padding-right: 15px
+                        padding-left: 0
                 .techLogoContainer
                     margin-block: 25px
+                    .techLogo
+                        padding-right: 15px
+                        padding-left: 0
+        .bottomFooter
+            span
+                min-width: 50vw
+                justify-content: space-between
 
 @media (max-width: 768px)
     .footerContainer
