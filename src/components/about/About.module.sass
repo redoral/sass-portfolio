@@ -5,31 +5,34 @@
     flex-direction: column
     align-items: center
     justify-content: center
-    padding: 50px
+    padding: 50px 25px
+    h2
+        font-weight: 600
+        margin-block: 0px 25px
     p
         max-width: 500px
+        margin-block: 0px 10px
         text-align: center
     a
         button
             @include button($black, $white)
     .skills
         justify-content: center
-        align-items: center
         margin-top: 25px
         animation: fadeInFromTop 1s ease
-        h3 
+        h3
+            font-weight: 600
             padding: 0
             margin: 0
         div
             display: flex
-            flex-direction: column  
-            min-height: 300px
-            margin: 20px
-            max-width: 300px
+            flex-direction: column
+            margin-inline: 25px
             ul
                 list-style-type: none
                 padding: 0
     .expandButton
+        @include noSelectDrag()
         font-size: 14px
         cursor: pointer
         span
@@ -39,15 +42,26 @@
     
 @media (max-width: 768px)
     .aboutContainer
+        align-items: flex-start
         h2
             font-size: 22px
         p
+            text-align: left
             font-size: 14px
+        a
+            button
+                margin-inline: 0
         .skills
+            align-items: flex-start
+            justify-content: flex-start
+            flex: 1
+            div
+                margin-inline: 0
+                margin-right: 50px
             h3
                 font-size: 18px
             li
-                font-size: 12px
+                font-size: 14px
 
 
     

@@ -6,12 +6,13 @@
     justify-content: center
     align-items: center
     background: $secondary
-    padding: 50px
+    padding: 50px 25px
     h2
+        font-weight: 600
         margin: 0
-        padding: 0
     p
         font-weight: 500
+        margin-block: 10px 25px
     a
         color: $accent
     .projectList
@@ -52,13 +53,18 @@
 
 @media (max-width: 768px)
     .projectsContainer
+        align-items: flex-start
         h2
             font-size: 22px
         p
             font-size: 14px
+            margin-block: 5px 30px
         .projectList
             .projectCard
                 img
                     width: 175px
+                &:hover
+                    animation: none
+                    transform: none
         
 
