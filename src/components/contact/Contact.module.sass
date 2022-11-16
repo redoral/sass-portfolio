@@ -15,17 +15,14 @@
         display: flex
         flex: 1
         flex-direction: column
-        padding-inline: 25px
-        margin-top: 50px
+        padding: 50px 25px 0px 25px
         h2
             font-weight: 600
             margin: 0
-            margin-inline: 10px
         .contactInfo
             display: flex
             flex-direction: column
             align-items: flex-start
-            margin-inline: 10px
             margin-top: 5px
             .contactIcon
                 transform: translateY(2px)
@@ -46,15 +43,14 @@
         form
             display: flex
             flex-direction: column
+            flex: 1
             margin-top: 25px
-            min-height: 500px
             label
                 font-weight: 500
                 font-size: 12px
-                padding-left: 15px
             span
                 display: flex
-                margin: 10px
+                margin-block: 10px
                 padding: 15px
                 border: 0
                 background: $primary
@@ -82,11 +78,9 @@
         
             label[for=submit]
                 @include button($black, $white)
-                padding: 10px 20px
-                font-weight: 500
                 font-size: 14px
+                margin-inline: 0
                 text-align: center
-                margin-bottom: 0
             img, .buttonIcon, p
                 flex: 1
                 align-self: center

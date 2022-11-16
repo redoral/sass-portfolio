@@ -37,11 +37,13 @@ const About: React.FC<RefsI> = (props: RefsI) => {
       <span className={styles.expandButton} onClick={() => toggleCollapse()}>
         {display === 'none' ? (
           <span>
-            view skills <GoChevronDown style={{ transform: 'translateY(2px)' }} />
+            <GoChevronDown style={{ transform: 'translateY(2px)' }} /> view skills{' '}
+            <GoChevronDown style={{ transform: 'translateY(2px)' }} />
           </span>
         ) : (
           <span>
-            hide skills <GoChevronUp style={{ transform: 'translateY(2px)' }} />
+            <GoChevronUp style={{ transform: 'translateY(2px)' }} /> hide skills{' '}
+            <GoChevronUp style={{ transform: 'translateY(2px)' }} />
           </span>
         )}
       </span>

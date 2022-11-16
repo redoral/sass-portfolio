@@ -18,7 +18,7 @@
             flex: 1
             flex-direction: column
             padding-block: 50px 25px
-            padding-inline: 50px
+            padding-inline: 25px
             span
                 @include noSelectDrag()
                 display: flex
@@ -80,7 +80,6 @@
             min-width: 0
             flex-direction: column
             div
-                padding-inline: 50px
                 padding-block: 0
                 span
                     margin-bottom: 0
@@ -92,19 +91,18 @@
                 .socialContainer
                     margin-top: 15px
                     .socials
-                        padding-right: 15px
-                        padding-left: 0
+                        padding-inline: 0px 15px
                 .techLogoContainer
                     margin-block: 25px
                     .techLogo
-                        padding-right: 15px
-                        padding-left: 0
+                        padding-inline: 0px 15px
         .bottomFooter
             span
-                min-width: 100vw
+                min-width: 0
+                flex: 1
                 justify-content: space-between
                 p
-                    padding-inline: 50px
+                    padding-inline: 25px
 
 @media (max-width: 768px)
     .footerContainer
