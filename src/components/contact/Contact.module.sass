@@ -1,5 +1,5 @@
 @import '../../globals'
-    
+
 .contactContainer
     display: flex
     background: $tertiary
@@ -61,21 +61,21 @@
                     margin-top: 2px
                     margin-right: 10px
             textarea, input
-                    flex: 1
-                    background: none
-                    font-family: $font-stack
-                    border: 0
-                    color: $black
-                    font-weight: 500
-                    &:focus
-                        outline: none
-                        transition: background 0.5s linear
+                flex: 1
+                background: none
+                font-family: $font-stack
+                border: 0
+                color: $black
+                font-weight: 500
+                &:focus
+                    outline: none
+                    transition: background 0.5s linear
             textarea
                 height: 100px
                 text-align: start
                 resize: none
                 border: 0
-        
+
             label[for=submit]
                 @include button($black, $white)
                 font-size: 14px
@@ -92,7 +92,6 @@
                 padding: 0
                 margin: 0
 
-        
         .error
             font-weight: 500
             margin-block: 25px
@@ -107,7 +106,7 @@
         .personalImg
             flex: 1
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
     .contactContainer
         flex-direction: column
         .personalImg
@@ -116,9 +115,3 @@
             font-size: 22px
         p
             font-size: 14px
-
-    
-
-
-
-    
