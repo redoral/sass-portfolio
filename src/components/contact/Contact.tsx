@@ -11,7 +11,7 @@ import {
 import { FcCheckmark, FcHighPriority } from 'react-icons/fc';
 import { useRef, MutableRefObject, FormEvent, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import spinner from '../../assets/img/spinner.gif';
+import spinner from '../../assets/img/spinner.svg';
 import { RefsI } from '../../App';
 
 const Contact: React.FC<RefsI> = (props: RefsI) => {
@@ -46,7 +46,7 @@ const Contact: React.FC<RefsI> = (props: RefsI) => {
 
   const dynamicButton = () => {
     if (response === 'loading') {
-      return <img src={spinner} width='50px' />;
+      return <img src={spinner} width='32px' />;
     } else if (response === 'OK') {
       return <FcCheckmark className={styles.buttonIcon} size={32} />;
     } else if (response.startsWith('error')) {

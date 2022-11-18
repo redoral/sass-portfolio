@@ -1,8 +1,8 @@
 @import '../../globals'
 
-.navbarContainer 
+.navbarContainer
     display: flex
-    min-height: 150px 
+    min-height: 150px
     width: 1000px
     span
         @include noSelectDrag()
@@ -26,7 +26,7 @@
                     color: $white
                     text-decoration: none
                     cursor: pointer
-                    &:hover 
+                    &:hover
                         transition: color 0.5s ease
                         color: $secondary
             .projects
@@ -42,7 +42,7 @@
                     background-color: $white
                     color: $black
                     border-top: 5px solid $secondary
-                    animation: fadeInFromTop 1s   
+                    animation: fadeInFromTop 1s
                     div
                         margin: 50px 50px
                         p
@@ -66,7 +66,6 @@
         &:hover
             color: $secondary
             transition: color 0.5s ease
-            
 
 @media (max-width: 1000px)
     .navbarContainer
@@ -77,7 +76,7 @@
         .items
             font-size: 14px
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
     .navbarContainer
         justify-content: space-between
         span
@@ -93,10 +92,3 @@
         .hamburgerNav
             display: flex
             cursor: pointer
-
-
-    
-
-
-
-

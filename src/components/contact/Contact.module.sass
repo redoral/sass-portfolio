@@ -1,5 +1,5 @@
 @import '../../globals'
-    
+
 .contactContainer
     display: flex
     background: $tertiary
@@ -7,15 +7,16 @@
         display: flex
         flex: 3
         border: 0
-        background: url('../../assets/img/me.jpeg')
+        background: url('../../assets/img/me.jpg')
         background-size: cover
-        background-position: center
+        background-position: top
 
     .form
         display: flex
         flex: 1
         flex-direction: column
         padding: 50px 25px 0px 25px
+        min-height: 600px
         h2
             font-weight: 600
             margin: 0
@@ -61,21 +62,21 @@
                     margin-top: 2px
                     margin-right: 10px
             textarea, input
-                    flex: 1
-                    background: none
-                    font-family: $font-stack
-                    border: 0
-                    color: $black
-                    font-weight: 500
-                    &:focus
-                        outline: none
-                        transition: background 0.5s linear
+                flex: 1
+                background: none
+                font-family: $font-stack
+                border: 0
+                color: $black
+                font-weight: 500
+                &:focus
+                    outline: none
+                    transition: background 0.5s linear
             textarea
                 height: 100px
                 text-align: start
                 resize: none
                 border: 0
-        
+
             label[for=submit]
                 @include button($black, $white)
                 font-size: 14px
@@ -92,7 +93,6 @@
                 padding: 0
                 margin: 0
 
-        
         .error
             font-weight: 500
             margin-block: 25px
@@ -107,18 +107,12 @@
         .personalImg
             flex: 1
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
     .contactContainer
         flex-direction: column
         .personalImg
-            min-height: 300px
+            min-height: 250px
         h2
             font-size: 22px
         p
             font-size: 14px
-
-    
-
-
-
-    
